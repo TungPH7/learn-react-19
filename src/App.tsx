@@ -1,6 +1,8 @@
 import { BrowserRouter, Route, Routes } from 'react-router'
 import './global.css'
 import { DefaultLayout } from './layout/default-layout'
+import { UseLayoutEffectPage } from './pages/hooks/use-layout-effect'
+import { RequestAnimationFramePage } from './pages/web-apis/request-animation-frame'
 
 function App() {
   return (
@@ -23,10 +25,19 @@ function App() {
           }
         />
         <Route
-          path="hooks/use-effect"
+          path="hooks/use-layout-effect"
           element={
             <DefaultLayout>
-              <div>useEffect page</div>
+              <UseLayoutEffectPage />
+            </DefaultLayout>
+          }
+        />
+
+        <Route
+          path="/web-api/request-animation-frame"
+          element={
+            <DefaultLayout>
+              <RequestAnimationFramePage />
             </DefaultLayout>
           }
         />

@@ -11,10 +11,45 @@ export const MENU: MenuNode[] = [
         path: '/hooks/use-state'
       },
       {
-        id: 'use-effect',
-        label: 'useEffect',
-        path: '/hooks/use-effect'
+        id: 'use-layout-effect',
+        label: 'useLayoutEffect',
+        path: '/hooks/use-layout-effect'
+      }
+    ]
+  },
+  {
+    id: 'web-api',
+    label: 'Web APIs',
+    children: [
+      {
+        id: 'request-animation-frame',
+        label: 'requestAnimationFrame',
+        path: '/web-api/request-animation-frame'
       }
     ]
   }
 ]
+
+// useState
+// useReducer
+
+// useContext
+
+// useRef
+// useImperativeHandle
+
+// useEffect
+// useLayoutEffect
+// useInsertionEffect
+
+// useCallback
+// useMemo
+
+// useTransition
+// useDeferredValue
+// useActionState
+// useOptimistic
+
+// useDebugValue
+// useId
+// useSyncExternalStore

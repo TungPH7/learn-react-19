@@ -7,7 +7,7 @@ export const DefaultLayout: React.FC<React.PropsWithChildren> = ({
   return (
     <div>
       <Header />
-      {children}
+      <div className="mx-auto max-w-7xl px-4 py-6">{children}</div>
     </div>
   )
 }
