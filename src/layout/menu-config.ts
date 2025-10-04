@@ -14,6 +14,11 @@ export const MENU: MenuNode[] = [
         id: 'use-layout-effect',
         label: 'useLayoutEffect',
         path: '/hooks/use-layout-effect'
+      },
+      {
+        id: 'use-useTransition',
+        label: 'useTransition',
+        path: '/hooks/use-transition'
       }
     ]
   },
@@ -30,6 +35,7 @@ export const MENU: MenuNode[] = [
   }
 ]
 
+// ======== React 16.8 ========
 // useState
 // useReducer
 
@@ -40,16 +46,20 @@ export const MENU: MenuNode[] = [
 
 // useEffect
 // useLayoutEffect
-// useInsertionEffect
 
 // useCallback
 // useMemo
 
+// useDebugValue
+
+// ======== React 18 ========
 // useTransition
 // useDeferredValue
-// useActionState
-// useOptimistic
 
-// useDebugValue
+// useInsertionEffect
 // useId
 // useSyncExternalStore
+
+// ======== React 19 ========
+// useOptimistic
+// useActionState

@@ -3,6 +3,7 @@ import './global.css'
 import { DefaultLayout } from './layout/default-layout'
 import { UseLayoutEffectPage } from './pages/hooks/use-layout-effect'
 import { RequestAnimationFramePage } from './pages/web-apis/request-animation-frame'
+import { UseTransitionPage } from './pages/hooks/use-transition/use-transition'
 
 function App() {
   return (
@@ -29,6 +30,14 @@ function App() {
           element={
             <DefaultLayout>
               <UseLayoutEffectPage />
+            </DefaultLayout>
+          }
+        />
+        <Route
+          path="hooks/use-transition"
+          element={
+            <DefaultLayout>
+              <UseTransitionPage />
             </DefaultLayout>
           }
         />
