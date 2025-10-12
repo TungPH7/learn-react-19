@@ -32,6 +32,17 @@ export const MENU: MenuNode[] = [
         path: '/web-api/request-animation-frame'
       }
     ]
+  },
+  {
+    id: 'web-api',
+    label: 'react-server-components',
+    children: [
+      {
+        id: 'server-functions',
+        label: 'server-functions',
+        path: '/rsc/server-functions'
+      }
+    ]
   }
 ]
 

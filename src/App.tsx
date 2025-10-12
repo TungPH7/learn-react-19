@@ -4,6 +4,9 @@ import { DefaultLayout } from './layout/default-layout'
 import { UseLayoutEffectPage } from './pages/hooks/use-layout-effect'
 import { RequestAnimationFramePage } from './pages/web-apis/request-animation-frame'
 import { UseTransitionPage } from './pages/hooks/use-transition/use-transition'
+import Home from './pages/home/home'
+import ServerFunctions from './pages/react-server-components/server-functions'
+import UseState from './pages/hooks/use-state'
 
 function App() {
   return (
@@ -13,7 +16,7 @@ function App() {
           path="/"
           element={
             <DefaultLayout>
-              <div>Home page</div>
+              <Home />
             </DefaultLayout>
           }
         />
@@ -21,7 +24,7 @@ function App() {
           path="hooks/use-state"
           element={
             <DefaultLayout>
-              <div>useState page</div>
+              <UseState />
             </DefaultLayout>
           }
         />
@@ -47,6 +50,15 @@ function App() {
           element={
             <DefaultLayout>
               <RequestAnimationFramePage />
+            </DefaultLayout>
+          }
+        />
+
+        <Route
+          path="/rsc/server-functions"
+          element={
+            <DefaultLayout>
+              <ServerFunctions />
             </DefaultLayout>
           }
         />
